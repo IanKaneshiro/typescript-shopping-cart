@@ -9,7 +9,7 @@ type StoreItemProp = {
 };
 
 const StoreItem = ({ id, name, price, imgUrl }: StoreItemProp) => {
-  const quantity = 1;
+  const quantity: number = 1;
   return (
     <Card className="h-100">
       <Card.Img
@@ -40,7 +40,7 @@ const StoreItem = ({ id, name, price, imgUrl }: StoreItemProp) => {
                 className="d-flex align-items-center justify-content-center"
                 style={{ gap: ".5rem" }}
               >
-                Bye
+                <Button variant="danger"></Button>
               </div>
             </div>
           )}
